@@ -10,14 +10,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/**
- * Plugin Name: BuddyPress User Contact Form
- * Version: 1.0.3
- * Plugin URI: https://buddydev.com/plugins/millionaires-digest-user-contact-form/
- * Author: BuddyDev
- * Author URI: https://buddydev.com
- * Description: Plugins allow site admin to set role which have their contact me form.
- */
+/*
+Plugin Name: Millionaire's Digest Contact Form  
+Description: Give users the ability to have a contact form with the ability to control whether or not they want to display it based on their member type.
+Version: 1.0.0
+Author: K&L (Founder of the Millionaire's Digest)
+Author URI: https://millionairedigest.com/
+*/
 
 /**
  * Helper class.
