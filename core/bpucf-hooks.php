@@ -50,7 +50,7 @@ function bpucf_add_settings_menu() {
 			'name'            => __( 'Contact Form', 'millionaires-digest-user-contact-form' ),
 			'slug'            => $slug,
 			'parent_slug'     => $settings_slug,
-			'position'        => 33,
+			'position'        => 16,
 			'parent_url'      => trailingslashit( bp_displayed_user_domain() . $settings_slug ),
 			'screen_function' => 'bpucf_settings_form',
 			'user_has_access' => $show,
