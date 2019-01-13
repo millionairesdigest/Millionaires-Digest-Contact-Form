@@ -75,11 +75,11 @@ function bp_add_contact_button( $button ) {
 		return false;
 	}
 
-	if( ! bp_has_member_type( $user_id, 'brand' ) && ( ! bp_has_member_type( $user_id, 'famous-person' ) && ( ! bp_has_member_type( $user_id, 'organization' ) && ( ! bp_has_member_type( $user_id, 'millionaire-digest' ) && ( ! bp_has_member_type( $user_id, 'millionaires-digest' ) && ( ! bp_has_member_type( $user_id, 'government' ) ) ) ) ) ) ) {
+	if( ! bp_has_member_type( $user_id, 'brand' ) && ( ! bp_has_member_type( $user_id, 'famous_person' ) && ( ! bp_has_member_type( $user_id, 'organization' ) && ( ! bp_has_member_type( $user_id, 'millionaire_digest' ) && ( ! bp_has_member_type( $user_id, 'millionaires_digest' ) && ( ! bp_has_member_type( $user_id, 'government' ) ) ) ) ) ) ) {
 		return;
 	}
 	
-	if ( $is_visible && ! bp_has_member_type( $user_id, 'brand' ) && ( ! bp_has_member_type( $user_id, 'organization' ) && ( ! bp_has_member_type( $user_id, 'millionaires-digest' ) && ( ! bp_has_member_type( $user_id, 'government' ) ) ) ) ) {
+	if ( $is_visible && ! bp_has_member_type( $user_id, 'brand' ) && ( ! bp_has_member_type( $user_id, 'organization' ) && ( ! bp_has_member_type( $user_id, 'millionaires_digest' ) && ( ! bp_has_member_type( $user_id, 'government' ) ) ) ) ) {
 				$contact_button_url = bp_core_get_userlink( bp_displayed_user_id(), false, true ) . $profile_menu_slug . 'contact';
 			?>
 	<div id="bp-add-contact-me-btn" class="generic-button">
@@ -89,7 +89,7 @@ function bp_add_contact_button( $button ) {
 	</div>
 	<?php
 	}
-	elseif ( $is_visible && ! bp_has_member_type( $user_id, 'famous-person' ) && ( ! bp_has_member_type( $user_id, 'millionaire-digest' ) ) ) {
+	elseif ( $is_visible && ! bp_has_member_type( $user_id, 'famous_person' ) && ( ! bp_has_member_type( $user_id, 'millionaire_digest' ) ) ) {
 		$contact_button_url = bp_core_get_userlink( bp_displayed_user_id(), false, true ) . $profile_menu_slug . 'contact';
 			?>
 	<div id="bp-add-contact-me-btn" class="generic-button">
